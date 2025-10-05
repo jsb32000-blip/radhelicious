@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login | Radhe Licious</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  body { background: #f9fafb; }
+  .card {
+    max-width: 400px;
+    margin: 120px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+<div class="card text-center">
+  <h2 class="text-2xl font-bold mb-4">🔒 Admin Login</h2>
+  <form action="admin_auth.php" method="POST">
+    <input type="text" name="username" placeholder="Username" class="border p-2 w-full mb-3 rounded" required>
+    <input type="password" name="password" placeholder="Password" class="border p-2 w-full mb-3 rounded" required>
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full">Login</button>
+  </form>
+</div>
+</body>
+</html>
